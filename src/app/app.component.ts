@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Output,Input,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Empty-Project';
+  testo:string=""
+  testo_casella:string=""
+
+  onClick(){
+    console.log("Ciao Mondo")
+    this.testo=this.testo_casella
+  }
+
+
+
 }
